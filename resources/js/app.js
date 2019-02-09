@@ -15,7 +15,12 @@ const routes = [
 	{
 		path: '/user',
 		name: 'userView',
-		component : require('./components/ExampleComponent.vue').default
+		component : require('./components/UserAdd.vue').default
+	},
+	{
+		path: '/user/:id',
+		name: 'userEdit',
+		component : require('./components/UserEdit.vue').default
 	}
 ]
 
